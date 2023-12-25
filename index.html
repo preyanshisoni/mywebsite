@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            /* font-family: sans-serif; */
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            /* background-color:rgb(129, 188, 208); */
+            background-color: rgb(170, 107, 228);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+
+        }
+
+        nav ul li a:hover {
+            color: aquamarine;
+            font-size: 1.04rem;
+
+        }
+
+        .first {
+            display: flex;
+            justify-content: space-around;
+            margin: 80px 0;
+        }
+
+        .leftSection {
+            font-size: 3rem;
+
+        }
+
+        .first>div {
+            width: 30%;
+        }
+
+        .leftSection {
+            margin-top: 120px;
+        }
+
+        .rightsection img {
+            width: 100%;
+            height: 110px 20px;
+
+        }
+
+        .purple {
+            color: rgb(170, 107, 228);
+        }
+
+        #element {
+            color: rgb(170, 107, 228);
+        }
+
+        .secondsection {
+            max-width: 80vw;
+            margin: auto;
+
+        }
+
+        .second-div h1 {
+            height: 20%;
+            width: 30%;
+
+            align-content: center;
+
+            margin-left: 448px;
+            font-size: 40px;
+        }
+
+        .about {
+            height: 80vh;
+            width: 80vw;
+
+            display: flex;
+
+        }
+
+        .aboutleft {
+            width: 50%;
+
+        }
+
+        .aboutcontent {
+
+            display: flex;
+            align-items: center;
+            margin: 30px 30px;
+            width: 400px;
+            height: 400px;
+        }
+
+        .aboutcontent p {
+            font-size: 30px;
+        }
+
+        .aboutright {
+
+            float: right;
+        }
+
+        #services {
+            margin-left: 40%;
+            /* padding:30px 0; */
+        }
+
+        .services-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minimax(250px));
+            /* grid-gap:40px; */
+            margin-top: 20%;
+
+        }
+
+        .leftSection a {
+            border: 2px solid white;
+            border-radius: 5px;
+            color: white;
+            font-size: 20px;
+            padding: 10px;
+            /* background-color: black; */
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            margin: 30px 0;
+        }
+
+        /* contact */
+        .row {
+            margin-top: -50px;
+            display: flex;
+            justify-content: space-around;
+
+            height: 50vh;
+        }
+
+        .contact-left {
+
+            margin-left: 80px;
+
+        }
+
+        .contact-right {
+
+            width: 500px;
+        }
+
+        .contact-right form {
+
+            margin: 30px;
+        }
+
+        .contact-left p {
+            margin-top: 3px;
+            font-size: 25px;
+        }
+
+        .social-icons {
+            margin-top: 30px;
+
+
+        }
+
+        #contactno {
+            margin-top: 20px;
+        }
+
+        #email {
+            margin-top: 20px;
+        }
+
+        .img {
+            margin-left: 10px;
+        }
+
+        #submit-btn {
+            background-color: black;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Priyanshi's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Certification</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact me</a></li>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="first">
+            <div class="leftSection">Hy, I am <span class="purple">Priyanshi</span>
+                <div> and I am a passionate </div>
+                <span id="element"></span><br>
+                <!-- element id is below | -->
+                <!-- <button id="Resume">Download Resume</button>-->
+                <a href="/P_RESUME.pdf" download class="btn">Download Resume</a>
+
+
+            </div>
+            <div class="rightsection">
+                <img src="/images/priyanshi.png" alt="image not found">
+            </div>
+        </section>
+        <!-- second section is started -->
+        <section class="secondsection">
+            <div class="second-div">
+                <h1>About Me</h1>
+                <div class="about">
+                    <div class="aboutleft">
+                        <div class="aboutcontent">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore quas omnis itaque modi
+                                voluptatem asperiores nesciunt enim ex fugiat possimus numquam aliquid, eligendi illum
+                                sapiente fugit iste quos odit adipisci.</p>
+                        </div>
+
+
+
+
+
+                    </div>
+                    <div class="aboutright">
+                        <img src="/images/girl_web.webp" alt="image not found">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- contact me -->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title" style=font-size:3rem;>Contact me</h1>
+                        <p id="email">priyanshisoni7227@gmail.com</p>
+                        <p id="contactno">9302558280</p>
+
+
+                        <div class="social-icons">
+
+                            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="www.facebook.com" class="img"><img src="/images/facebook.png" alt="image not found"
+                                    width="30px"></a>
+
+                            <a href="www.facebook.com" class="img"><img src="/images/instagram.jpeg"
+                                    alt="image not found" width="30px"></a>
+
+                            <a href="www.facebook.com" class="img"><img src="/images/linkdin.png" alt="image not found"
+                                    width="30px"></a>
+
+                            <a href="www.facebook.com" class="img"><img src="/images/github.png" alt="image not found"
+                                    width="30px"></a>
+                        </div>
+                    </div>
+
+                    <div class="contact-right">
+                        <form>
+
+                            <input type="text" name="Name" placeholder="Your name"
+                                style="width: 100%; height:30px;"><br>
+
+                            <input type="email" name="email" placeholder="Your email" required
+                                style="width: 100%; height:30px; position:relative; top:30px;"><br>
+
+                            <textarea name="Message" rows="8" cols="58" placeholder="Your Message"
+                                style="position: relative; top:50px;"></textarea><br>
+
+                            <button type="submit" id="submit-btn"
+                                style="margin-left:200px;position: relative; top:75px">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!------------------------------services-------------------------------->
+    <!-- <div id="services">
+<div class="container">
+    <h1 class="sub-title">My Certification</h1>
+    <div class="services-list">
+    <div>
+        <h2>Web Designer</h2>
+    </div>
+    </div>
+
+</div>
+</div> -->
+
+
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Web Designer', 'Java Developer '],
+            typeSpeed: 50,
+        });
+
+    </script>
+
+</body>
+
+</html>
